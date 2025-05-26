@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Page - Vertical Layout</title>
+
+  <!-- Link all external CSS files -->
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Layout styling to ensure vertical stacking -->
+  <style>
+    .section-wrapper {
+      display: block;
+      width: 100%;
+      clear: both;
+      margin: 40px auto;
+      padding: 20px;
+      box-sizing: border-box;
+      border-bottom: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Class Routine -->
+  <div class="section-wrapper" id="page1">
+    <h2>Class Routine</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day/Period</th>
+          <th>I<br>9:30-10:20</th>
+          <th>II<br>10:20-11:10</th>
+          <th>III<br>11:10-12:00</th>
+          <th>12:00-12:40</th>
+          <th>IV<br>12:40-1:30</th>
+          <th>V<br>1:30-2:20</th>
+          <th>VI<br>2:20-3:10</th>
+          <th>VII<br>3:10-4:00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Saturday</td>
+          <td>Eng</td>
+          <td>Mat</td>
+          <td>Che</td>
+          <td rowspan="6" class="lunch">LUNCH</td>
+          <td>LAB</td>
+          <td></td>
+          <td></td>
+          <td>Phy</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td colspan="3">LAB</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Mat</td>
+          <td>SPORTS</td>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Mat</td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td colspan="2">LAB</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td colspan="3">LAB</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td colspan="2">LAB</td>
+          <td></td>
+          <td>Mat</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Section 2: Navigation Bar -->
+  <div class="section-wrapper" id="page2">
+    <header>
+      <div class="logo">
+        <span class="black">Md. Mamun</span> <span class="green">Miah</span>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" class="active">About Me</a></li>
+          <li><a href="#">Education</a></li>
+          <li class="dropdown">
+            <a href="#">Achievement ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Educational Achievements</a></li>
+              <li><a href="#">Co-Curricular Achievements</a></li>
+              <li><a href="#">Sports Achievements</a></li>
+              <li><a href="#">Recharge Achievements</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Section 3: Grid Layout -->
+  <div class="section-wrapper" id="page3">
+    <div class="grid-container">
+      <div class="header">Header</div>
+      <div class="advertise left">Advertise</div>
+      <div class="main-content">Main Content</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="advertise right">Advertise</div>
+      <div class="twin1">Twin</div>
+      <div class="twin2">Twin</div>
+      <div class="footer">Footer</div>
+    </div>
+  </div>
+
+  <!-- Section 4: Login Form -->
+  <div class="section-wrapper" id="page4">
+    <div class="login-container">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Enter your password" required>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <button type="submit">Login</button>
+      </form>
+      <p class="signup-link">Don’t have an account? <a href="#">Signup</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
